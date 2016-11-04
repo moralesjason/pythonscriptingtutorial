@@ -1,5 +1,5 @@
-#!/usr/bin//env python
-import urllib
+#!/usr/bin/env python
+#import urllib2
 
 properties = {}
 
@@ -11,14 +11,12 @@ properties['path'] = '/trends/'
 #the properties in this map represent the URL:
 #http://www.google.com:80/trends/
 
-url = properties['protocol'] + '://' + \
-	properties['host'] + ':' + \
-	properties['port'] + \
-	properties['path']
+url = properties['protocol'] + '://' + properties['host'] + ':' + properties['port'] + properties['path']
 
 print 'Reading URL', url
 
-response = urllib.urlopen(url)
+#response = urllib2.urlopen(url)
 
-print response.read()
+#print response.read()
+
 
